@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site Brand Consulting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Trimba</h2>
+        <img src="" alt="trimba logo">
+    </header>
+    <main>
+        <section>
+            <h1>Let's Scale your brand, Together</h1>
+            <p>Get a <span>start@userthemes.com</span></p>
+            <img src="" alt="people working">
+        </section>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Type Name" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Type company name" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Type Phone Number" pattern="^\+?\d{9,15}$" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Type email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+            <label for="help">How can we help</label>
+            <input type="text" id="help" name="help" placeholder="A brief Description here" required>
+            
+            <fieldset>
+                <legend>Services</legend>
+                <div>
+                    <label><input type="checkbox" name="services" value="media" checked> Paid Media</label>
+                    <label><input type="checkbox" name="services" value="experience"> Digital experience</label>
+                    <label><input type="checkbox" name="services" value="email"> Email</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="services" value="content"> Content Creation</label>
+                    <label><input type="checkbox" name="services" value="strategy"> Strategy & Consulting</label>
+                    <label><input type="checkbox" name="services" value="other"> Other</label>
+                </div>
+            </fieldset>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Insurance Licenses</a>
+    </footer>
+</body>
+</html>
