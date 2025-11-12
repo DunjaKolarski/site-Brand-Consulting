@@ -37,7 +37,7 @@ body {
     mask-image: linear-gradient(to bottom left, rgba(0,0,0,1), rgba(0,0,0,0));
     mask-size: cover;
     mask-repeat: no-repeat;
- z-index: -1;
+    z-index: -1;
 }
 
 header {
