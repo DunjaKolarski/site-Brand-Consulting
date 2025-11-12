@@ -9,6 +9,37 @@ html {
 }
 
 
+body {
+    position: relative;
+}
+
+#square-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12%;
+    -webkit-mask-image: linear-gradient(to bottom right, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: linear-gradient(to bottom right, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    z-index: -1;
+}
+#square-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    -webkit-mask-image: linear-gradient(to bottom left, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: linear-gradient(to bottom left, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-size: cover;
+    mask-repeat: no-repeat;
+ z-index: -1;
+}
+
 header {
     width: 100vw;
     height: 10vh;
