@@ -126,6 +126,9 @@ form > input {
 form > input:focus {
     outline: none;
 }
+form > input::placeholder {
+    font-size: 1rem;
+}
 form fieldset {
     width: 100%;
     display: flex;
@@ -217,4 +220,160 @@ footer div a {
     font-size: 1rem;
     font-weight: bold;
     color: #268bff;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) { 
+    html {
+        font-size: 10px;
+    }
+
+    
+    main {
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main section {
+        width: 70%;
+        height: 35%;
+        gap: 1rem;
+    }
+    main section h1 {
+        max-width: 100%;
+    }
+    main img {
+        width: 45%;
+    }
+
+    form {
+        width: 70%;
+        height: 65%;
+    }
+
+
+    footer {
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    header {
+        height: 8vh;
+    }
+
+
+    main {
+        height: 82vh;
+    }
+
+    main section {
+        gap: 1rem;
+    }
+    main section h1 {
+        font-size: 2.5rem;
+    }
+    main img {
+        width: 40%;
+    }
+
+    form > label {
+        font-size: 1rem;
+    }
+    form > input {
+        border-bottom: 0.2rem solid #fd922d34;
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.5rem;
+    }
+    form fieldset legend {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    form fieldset div {
+        gap: 0.2rem;
+    }
+    .checkmark {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    button {
+        padding: 0.6rem 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+
+
+    footer {
+        height: 10vh;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) { 
+    header {
+        height: 8vh;
+    }
+
+
+    main {
+        height: 82vh;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    main section {
+        width: 40%;
+        height: 100%;
+    }
+    main section h1 {
+        font-size: 2.5rem;
+    }
+    main img {
+        width: 40%;
+    }
+
+    form {
+        width: 50%;
+        height: 100%;
+    }
+    form > label {
+        font-size: 1rem;
+    }
+    form > input {
+        border-bottom: 0.2rem solid #fd922d34;
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.5rem;
+    }
+    form fieldset legend {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    form fieldset div {
+        gap: 0.2rem;
+    }
+
+    button {
+        padding: 0.6rem 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+
+
+    footer {
+        height: 10vh;
+    }
 }
