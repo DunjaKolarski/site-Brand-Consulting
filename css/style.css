@@ -252,6 +252,10 @@ fieldset label input:checked + .checkmark::after {
     font-size: 0.8rem;
     color: white;
 }
+input[type="checkbox"]:focus + .checkmark {
+    outline: 0.1rem solid #ffa32a;
+    outline-offset: 0.1rem;
+}
 
 
 button[type="submit"] {
@@ -293,7 +297,11 @@ footer div a {
     font-weight: bold;
     color: #268bff;
 }
-
+footer div a:focus {
+    outline: 0.1rem solid #ffa32a; 
+    outline-offset: 0.2rem;  
+    border-radius: 0.2rem;    
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     html {
