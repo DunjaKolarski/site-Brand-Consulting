@@ -15,9 +15,11 @@ function openMenu() {
     panel.classList.toggle("open");
     overlay.classList.toggle("show");
     const isOpen = panel.classList.contains("open"); 
+
     if (isOpen) { 
     panel.setAttribute("aria-hidden", "false");
     toggle.setAttribute("aria-expanded", "true");
+    options[0].focus();
     } else {
         panel.setAttribute("aria-hidden", "true");
         toggle.setAttribute("aria-expanded", "false");

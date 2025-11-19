@@ -65,6 +65,11 @@ body {
 .a11y-option span {
     font-size: 1rem;
 }
+.a11y-option:focus {
+    outline: 0.1rem solid #ffa32a; 
+    outline-offset: 0.1rem;        
+    background-color: #f0f8ff; 
+}
 
 #a11y-overlay {
     position: fixed;
