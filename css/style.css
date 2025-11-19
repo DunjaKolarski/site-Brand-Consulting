@@ -338,6 +338,12 @@ footer div a {
         height: 8vh;
     }
 
+    #a11y-panel {
+        gap: 1rem;
+    }
+    .a11y-option {
+        height: 18%;
+    }
 
     main {
         height: 82vh;
@@ -392,6 +398,12 @@ footer div a {
         height: 8vh;
     }
 
+    #a11y-panel {
+        gap: 1rem;
+    }
+    .a11y-option {
+        height: 18%;
+    }
 
     main {
         height: 82vh;
