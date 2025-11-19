@@ -25,6 +25,11 @@ body {
 #a11y-toggle i {
     font-size: 1rem;
 }
+#a11y-toggle:focus {
+    outline: 0.2rem solid #ffa32a; 
+    outline-offset: 0.2rem;         
+    border-radius: 0.2rem;        
+}
 
 #a11y-panel {
     position: fixed;
