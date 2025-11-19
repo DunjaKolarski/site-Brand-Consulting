@@ -10,6 +10,33 @@
 <body>
     <img src="/assets/square-left.jpg" alt="square left" id="square-left">
     <img src="/assets/square-right.jpg" alt="square right" id="square-right">
+    <button id="a11y-toggle" type="button" aria-controls="a11y-panel" aria-expanded="false">
+        <i class="bi bi-person-fill-gear"></i>
+    </button>
+    <aside id="a11y-panel" aria-hidden="true" role="dialog" aria-modal="true">
+        <h3>Accessibility Options</h3>
+
+        <div class="a11y-option" data-option="screen-reader" tabindex="0" role="button" aria-pressed="false">
+            <i class="bi bi-ear" aria-hidden="true"></i>
+            <span>Screen Reader Mode</span>
+        </div>
+
+        <div class="a11y-option" data-option="keyboard-nav" tabindex="0" role="button" aria-pressed="false">
+            <i class="bi bi-keyboard" aria-hidden="true"></i>
+            <span>Keyboard Navigation</span>
+        </div>
+
+        <div class="a11y-option" data-option="high-contrast" tabindex="0" role="button" aria-pressed="false">
+            <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+            <span>High Contrast</span>
+        </div>
+
+        <div class="a11y-option" data-option="large-text" tabindex="0" role="button" aria-pressed="false">
+            <i class="bi bi-type" aria-hidden="true"></i>
+            <span>Large Text</span>
+        </div>
+    </aside> 
+    <div id="a11y-overlay"></div>
     <header>
         <div>
             <img src="/assets/logo-trimba.jpg" alt="trimba logo">
@@ -61,5 +88,6 @@
             <a href="#">Insurance Licenses</a>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -12,6 +12,73 @@ html {
 body {
     position: relative;
 }
+#a11y-toggle {
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+#a11y-toggle i {
+    font-size: 1rem;
+}
+
+#a11y-panel {
+    position: fixed;
+    top: 0;
+    left: -19rem;
+    width: 18rem;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#a11y-panel.open {
+    left: 0;
+}
+#a11y-panel h3 {
+    width: 100%;
+    padding: 1rem 0;
+    color: #ffffff;
+    background-color: #047ee2;
+    text-align: center;
+}
+.a11y-option {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #015da8;
+    border: 0.1rem solid #797979;
+}
+.a11y-option i {
+    font-size: 2rem;
+}
+.a11y-option span {
+    font-size: 1rem;
+}
+
+#a11y-overlay {
+    position: fixed;
+    inset: 0;
+    background: #00000066;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9998;
+}
+#a11y-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
 
 #square-left {
     position: absolute;
@@ -182,7 +249,7 @@ fieldset label input:checked + .checkmark::after {
 }
 
 
-button {
+button[type="submit"] {
     width: 10rem;
     padding: 0.8rem 2rem;
     border: none;
